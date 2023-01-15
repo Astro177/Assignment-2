@@ -9,12 +9,13 @@
 body {
     font-family: "Work Sans", sans-serif;
 }
-
+/* header start */
 .top-header {
     background: rgba(255, 144, 14, 0.1);
     width: 100%;
     margin-bottom: 90px;
 }
+/* nav section */
 .nav-bar {
     display: flex;
     align-content: flex-end;
@@ -36,6 +37,7 @@ body {
     margin-top: 60px;
     margin-left: 750px;
 }
+/* banner section */
 .banner-section {
     text-align: center;
     margin-top: 200px;
@@ -65,6 +67,11 @@ body {
 img {
     margin-left: 250px;
 }
+/* header ends */
+
+/*-----------------
+ first section start
+  --------------*/
 .first-section {
     display: flex;
     gap: 75px;
@@ -107,6 +114,13 @@ img {
     background-color: #ff900e;
     border-radius: 10px;
 }
+/*-----------------
+ first section ends
+  --------------*/
+
+  /*-----------------
+ Second section start
+  --------------*/
 .second-section {
     display: flex;
     justify-content: center;
@@ -162,6 +176,11 @@ img {
     font-weight: 500px;
     font-size: 20px;
 }
+/*-----------------
+ second section ends
+  --------------*/
+
+  /* small section starts */
 .small-title {
     font-weight: 700;
     font-size: 45px;
@@ -173,6 +192,9 @@ img {
     margin-left: 240px;
     margin-bottom: 145px;
 }
+/* small section ends */
+
+/* transform section starts */
 .transform-section {
     display: flex;
     justify-content: center;
@@ -191,7 +213,6 @@ img {
     border-radius: 8px;
     margin-bottom: 180px;
 }
-
 .transform-box > img {
     margin: 0;
 }
@@ -231,6 +252,9 @@ img {
     font-size: 25px;
     color: #ff900e;
 }
+/* transform section ends */
+
+/* sponsor section starts */
 .sponsor-writing {
     text-align: center;
 }
@@ -257,29 +281,96 @@ img {
     filter: saturate(0);
     width: 166px;
 }
+/* sponsor section ends */
 
+/* footer section starts */
 .last-line {
     text-align: center;
     padding: 20px;
+    margin: 290px;
     background: #fff4e7;
     border-radius: 8px;
     margin-bottom: 100px;
 }
+/* footer section ends */
 
 /* responsive on mobile styles */
 @media only screen and (max-width:576px){
-    .top-header{
-        background-color: none;
-    }
     .nav-bar{
         flex-direction: column;
-        align-items: baseline;
     }
     .nav-title{
         margin: 0;
+        margin-top: 20px;
+        text-align: center;
     }
     .nav-list{
         flex-direction: column;
+        margin: 0;
+        margin: 20px;
         text-align: center;
     }
+    .btn-primary{
+        margin-left: 130px;
+    }
+    .top-header > img {
+        width: 100%;
+        margin: 0;
+    }
+    .first-section{
+        flex-direction: column;
+    }
+    .team-image{
+        grid-template-columns: repeat(1, 200px);
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .team-image > img{
+        margin: 20px;
+    }
+    .team-details{
+        margin: 30px;
+    }
+    .second-section{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .section-img{
+        margin: 0;
+        width: 100%;
+    }
+    .section-btn{
+        margin: 0;
+        margin-top: 500px;
+    }
+    .small-section{
+        margin-top: 200px;
+        text-align: center;
+    }
+    .small-title{
+        margin: 0;
+    }
+    .small-description{
+        margin: 0;
+        margin-bottom: 100px;
+    }
+    .transform-section{
+        flex-direction: column;
+    }
+    .transform-box{
+        margin: 0;
+    }
+    .floor-plans{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .spons-logo{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .last-line{
+        margin: 0;
+    }
 }
+
+          /* Styles Ends For Now */
